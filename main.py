@@ -55,9 +55,9 @@ def add_status():
 
         return updated_status_message
 
-# method for add friend
 
-def add_friend():
+
+def add_friend():                                      # method for add friend
 
     new_friend = Spy('', '', 0, 0.0)
 
