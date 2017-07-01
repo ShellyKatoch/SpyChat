@@ -89,7 +89,7 @@ def add_status():
        #when it is not updated
 
         else:
-            print(colored('You did not update your status message', 'magenta'))
+            print(colored("You did not update your status message","magenta"))
 
         #the updated message will read
         return updated_status_message
@@ -166,12 +166,12 @@ def send_message():
     friend_choice = select_a_friend()
 
     # Select the image in which you want to write a secret message
-    original_image = raw_input(colored("What is the name of the image?: "))
+    original_image = raw_input(colored("What is the name of the image?: ","cyan"))
 
     # the output path of the image where the message is stored
     output_path = "output.jpg"
     # write the secret message
-    text = raw_input(colored("What do you want to say? "))
+    text = raw_input(colored("What do you want to say? ","cyan"))
 
     # The library steganography that helps to encode the message
     Steganography.encode(original_image, output_path, text)
@@ -206,7 +206,7 @@ def send_message_help():
 def read_message():
     # Select a friend to communicate with
     sender = select_a_friend()
-    output_path = raw_input(colored("What is the name of the image file?: "))
+    output_path = raw_input(colored("What is the name of the image file?: ","green"))
 
     # Error handling if a secret message is present or not
     try:
@@ -375,17 +375,17 @@ elif existing.upper() == "N":
     spy = Spy(" ", " ", 0, 0.0)
 
     # Ask for the name
-    spy.name = raw_input(colored("Welcome to spy chat, you must tell me your spy name first: "))
+    spy.name = raw_input(colored("Welcome to spy chat, you must tell me your spy name first: ","cyan"))
 
     # Check if the name is entered or not
     if len(spy.name) > 0 and spy.name.isdigit() == False:
         # ask for the salutation
-        spy.salutation = raw_input(colored("What should we call you Mr. or Ms.?"))
+        spy.salutation = raw_input(colored("What should we call you Mr. or Ms.?","cyan"))
         # check if salutation is entered or not
         if len(spy.salutation) > 0:
 
             # Ask for the age of the spy
-            spy.age = raw_input(colored("Please enter your age: "))
+            spy.age = raw_input(colored("Please enter your age: ","green"))
 
             if len(spy.age) > 0:
                 # raw input always gives a string to typecast age to int.
@@ -396,7 +396,7 @@ elif existing.upper() == "N":
                     print("Welcome to Spy community")
 
                     # Ask for spy_rating
-                    spy.rating = raw_input(colored("Please enter your spy rating: "))
+                    spy.rating = raw_input(colored("Please enter your spy rating: ","green"))
                     if len(spy.rating) > 0:
                         # raw input always gives a string to typecast rating to float.
                         spy.rating = float(spy.rating)

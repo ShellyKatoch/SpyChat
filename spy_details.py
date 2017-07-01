@@ -29,7 +29,7 @@ class ChatMessage:
 
 spy = Spy('Shelly', 'Ms.', 20, 5)
 
-friend_one = Spy('Rajat Rana', 'Mr', 24,4.5)
+friend_one = Spy(colored('Rajat Rana', 'Mr', 24,4.5))
 friend_two = Spy('Ishita Katoch', 'Ms.', 20, 4.3)
 friend_three = Spy('Rounak Banik', 'Mr.', 24, 4.7)
 
