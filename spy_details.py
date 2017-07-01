@@ -8,6 +8,7 @@ from termcolor import colored
 class Spy:
 
     def __init__(self, name, salutation, age, rating):
+
         # Initializing the values
         self.name = name
         self.salutation = salutation
@@ -16,6 +17,7 @@ class Spy:
         self.is_online = True
         self.chats = []
         self.current_status_message = None
+
         # Count the number of words
         self.count = 0
 
